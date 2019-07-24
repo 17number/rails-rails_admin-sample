@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+  config.main_app_name = ["XXXXアプリ", "管理画面"]
+
   # Basic Authentication
   config.authenticate_with do
     authenticate_or_request_with_http_basic('Site Message') do |username, password|
