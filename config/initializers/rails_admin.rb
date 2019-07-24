@@ -8,6 +8,21 @@ RailsAdmin.config do |config|
     end
   end
 
+  # Field visibility
+  config.model 'User' do
+    list do
+      field :id
+      field :name
+      field :age
+      field :video
+      field :created_at
+    end
+    # Hide specific field with `configure` and `hide`
+    # configure :updated_at do
+    #   hide
+    # end
+  end
+
   ### Popular gems integration
 
   ## == Devise ==
